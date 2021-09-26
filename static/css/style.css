@@ -1,0 +1,17 @@
+li{
+  padding: 5px;
+  box-shadow: 5px 5px 5px white;
+}
+li.done{
+ border: 1px solid "#32a85a"; 
+ background-color: "#32a85a";
+ color: "#FFFFFF";
+}
+li.not-done{
+  border: 1px solid "#eda41c";
+  background-color: "#eda41c";
+  color: "#000000";
+}
+ul{
+  list-style-type: none;
+}
