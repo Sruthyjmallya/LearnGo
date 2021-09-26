@@ -1,14 +1,14 @@
 # Todo
 Simple todo web app using HTML, CSS, JavaScript and Golang.
 
-##Install Golang
+## Install Golang
 
 -[Download Golang](https://golang.org/dl/) from the  Official Website and install.
 -Set the GOPATH environment variable for your workspace.
  GOPATH may be set to a colon-separated list of paths inside which Go code, package objects, and executables may be found.
  Example if GOPATH is set to `C://Users/username/go`, then put this Todo repository into `C://Users/username/go/src`.
  
-##Run Todo 
+## Run Todo 
 
 -Open terminal or CMD.
 -Head to GOPATH/src/Todo.
