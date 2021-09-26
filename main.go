@@ -31,7 +31,9 @@ func todo(w http.ResponseWriter, r *http.Request){
 
 func main(){
 	mux := http.NewServeMux()
-	tmpl = template.Must(template.ParseFiles("/templates/index.html"))
+	tmpl = template.Must(template.ParseFiles("./templates/index.html"))
+	fs := http.FileServer(http.Dir("./static/"))
+	mux.Handle("/static/",http.StripPrefix("/static/",fs))
 	mux.HandleFunc("/todo",todo)
 	log.Fatal(http.ListenAndServe(":8080",mux))
 }
